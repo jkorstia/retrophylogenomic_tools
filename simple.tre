@@ -1,0 +1,19 @@
+#NEXUS 
+
+Begin trees;  
+        Translate
+                1 Aust,
+                2 Bran,
+                3 Cili,
+                4 Davi,
+                5 Luci,
+                6 Occu,
+                7 Sept,
+                8 Thys,
+                9 Veli,
+                10 Vive,
+                11 Yuma
+
+                ;
+tree 'SIMPLE' = [&U] (4,(2,(8,((7,3),(10,((1,(9,11)),(6,5)))))));
+End;

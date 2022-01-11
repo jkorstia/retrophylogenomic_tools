@@ -1,0 +1,27 @@
+#NEXUS
+
+Begin paup;
+
+set autoclose=yes warntree=no warnreset=no;
+
+log start File= '/path/to/logs/testbonk.log';
+
+execute input_genotypes.nex;
+
+getTrees file=simple.tre;
+
+delete splat/prune;
+
+saveTrees file=trees/testbonk_accepted.tre;
+
+exclude uninf;
+
+hsearch/NBest=3;
+
+pscores;
+
+saveTrees file=trees/testbonk.tre;
+
+log stop; 
+
+End;

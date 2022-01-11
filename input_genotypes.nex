@@ -1,0 +1,20 @@
+#NEXUS
+begin data;
+dimensions ntax=11 nchar=4;
+format datatype=standard missing=? gap=- interleave;
+matrix
+
+Aust           1011
+Bran           1110
+Cili           1111
+Davi           0101
+Luci           1111
+Occu           1111
+Sept           1111
+Thys           1111
+Veli           1111
+Vive           1111
+Yuma           1111
+
+;
+end;
